@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador de Estrutura Administrativa &amp; Remunerações</title>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Estrutura Administrativa & Remunerações</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome 6 Icons CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <script>
     tailwind.config = {
@@ -40,7 +41,7 @@
       .print-shadow-none { box-shadow: none !important; border: 1px solid #e2e8f0 !important; }
     }
   </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-bottom-4{bottom:-1rem}.-right-4{right:-1rem}.top-0{top:0px}.z-30{z-index:30}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-16{height:4rem}.h-8{height:2rem}.h-full{height:100%}.h-4{height:1rem}.h-6{height:1.5rem}.max-h-\[460px\]{max-height:460px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-16{width:4rem}.w-24{width:6rem}.w-8{width:2rem}.w-full{width:100%}.w-0\.5{width:0.125rem}.w-1\/2{width:50%}.w-12{width:3rem}.w-48{width:12rem}.w-\[600px\]{width:600px}.w-\[700px\]{width:700px}.min-w-\[760px\]{min-width:760px}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.divide-slate-50 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(248 250 252 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-amber-100{--tw-border-opacity:1;border-color:rgb(254 243 199 / var(--tw-border-opacity, 1))}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-emerald-400\/30{border-color:rgb(52 211 153 / 0.3)}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-purple-300{--tw-border-opacity:1;border-color:rgb(216 180 254 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-rose-800\/60{border-color:rgb(159 18 57 / 0.6)}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-teal-100{--tw-border-opacity:1;border-color:rgb(204 251 241 / var(--tw-border-opacity, 1))}.border-teal-200{--tw-border-opacity:1;border-color:rgb(153 246 228 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-teal-300{--tw-border-opacity:1;border-color:rgb(94 234 212 / var(--tw-border-opacity, 1))}.border-teal-500{--tw-border-opacity:1;border-color:rgb(20 184 166 / var(--tw-border-opacity, 1))}.border-l-slate-800{--tw-border-opacity:1;border-left-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-50\/20{background-color:rgb(255 251 235 / 0.2)}.bg-amber-50\/60{background-color:rgb(255 251 235 / 0.6)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-500\/5{background-color:rgb(59 130 246 / 0.05)}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/5{background-color:rgb(16 185 129 / 0.05)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-rose-950\/40{background-color:rgb(76 5 25 / 0.4)}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-teal-50\/20{background-color:rgb(240 253 250 / 0.2)}.bg-teal-50\/60{background-color:rgb(240 253 250 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-amber-50\/50{background-color:rgb(255 251 235 / 0.5)}.bg-purple-50\/50{background-color:rgb(250 245 255 / 0.5)}.bg-slate-300{--tw-bg-opacity:1;background-color:rgb(203 213 225 / var(--tw-bg-opacity, 1))}.bg-teal-50{--tw-bg-opacity:1;background-color:rgb(240 253 250 / var(--tw-bg-opacity, 1))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-teal-400{--tw-gradient-to:#2dd4bf var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pt-2{padding-top:0.5rem}.pb-2{padding-bottom:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[9px\]{font-size:9px}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-normal{font-weight:400}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-purple-900{--tw-text-opacity:1;color:rgb(88 28 135 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-teal-400{--tw-text-opacity:1;color:rgb(45 212 191 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-teal-700{--tw-text-opacity:1;color:rgb(15 118 110 / var(--tw-text-opacity, 1))}.text-teal-800{--tw-text-opacity:1;color:rgb(17 94 89 / var(--tw-text-opacity, 1))}.text-teal-900{--tw-text-opacity:1;color:rgb(19 78 74 / var(--tw-text-opacity, 1))}.text-teal-950{--tw-text-opacity:1;color:rgb(4 47 46 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-slate-800\/20{--tw-ring-color:rgb(30 41 59 / 0.2)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-200:hover{--tw-bg-opacity:1;background-color:rgb(233 213 255 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-900\/60:hover{background-color:rgb(136 19 55 / 0.6)}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:text-amber-800:hover{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.hover\:text-slate-200:hover{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.hover\:text-teal-800:hover{--tw-text-opacity:1;color:rgb(17 94 89 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-2{gap:0.5rem}.sm\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:p-5{padding:1.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+</head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans">
 
   <!-- Header -->
@@ -55,7 +56,7 @@
             Subsecretaria de Governança e Inteligência Rural
           </h1>
           <p class="text-xs text-slate-400">
-            Calculadora de Remunerações &amp; Dimensionamento Organizacional
+            Calculadora de Remunerações & Dimensionamento Organizacional
           </p>
         </div>
       </div>
@@ -76,15 +77,15 @@
     <!-- Navigation Tabs (3 Páginas) -->
     <div class="bg-slate-950 border-t border-slate-800/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1 sm:space-x-4 overflow-x-auto">
-        <button id="tab-btn-subsecretaria" onclick="switchPage('subsecretaria')" class="px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 flex items-center gap-2 transition whitespace-nowrap border-transparent text-slate-400">
+        <button id="tab-btn-subsecretaria" onclick="switchPage('subsecretaria')" class="px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 border-emerald-500 text-white flex items-center gap-2 transition whitespace-nowrap">
           <i class="fa-solid fa-building-columns text-emerald-400"></i>
-          1. Subsecretaria (Gabinete &amp; Visão Integrada)
+          1. Subsecretaria (Gabinete & Visão Integrada)
         </button>
-        <button id="tab-btn-uitr" onclick="switchPage('uitr')" class="px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 hover:text-slate-200 flex items-center gap-2 transition whitespace-nowrap border-emerald-500 text-white">
+        <button id="tab-btn-uitr" onclick="switchPage('uitr')" class="px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 transition whitespace-nowrap">
           <i class="fa-solid fa-satellite-dish text-teal-400"></i>
           2. UITR - Inteligência Territorial
         </button>
-        <button id="tab-btn-uasf" onclick="switchPage('uasf')" class="px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 hover:text-slate-200 flex items-center gap-2 transition whitespace-nowrap border-transparent text-slate-400">
+        <button id="tab-btn-uasf" onclick="switchPage('uasf')" class="px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 transition whitespace-nowrap">
           <i class="fa-solid fa-scale-balanced text-amber-400"></i>
           3. UASF - Assuntos Fundiários (UNAF-RURAL)
         </button>
@@ -105,9 +106,9 @@
           </div>
         </div>
         <div class="mt-3">
-          <span id="kpi-total-mensal" class="text-2xl font-extrabold text-slate-900 tracking-tight">R$&nbsp;119.711,00</span>
+          <span id="kpi-total-mensal" class="text-2xl font-extrabold text-slate-900 tracking-tight">R$ 0,00</span>
           <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
-            <span id="kpi-anualizado" class="font-medium text-emerald-700">R$&nbsp;0,00</span> /ano
+            <span id="kpi-anualizado" class="font-medium text-emerald-700">R$ 0,00</span> /ano
           </p>
         </div>
         <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-emerald-500/5 rounded-full pointer-events-none"></div>
@@ -121,7 +122,7 @@
           </div>
         </div>
         <div class="mt-3">
-          <span id="kpi-total-cargos" class="text-2xl font-extrabold text-slate-900 tracking-tight">undefined</span>
+          <span id="kpi-total-cargos" class="text-2xl font-extrabold text-slate-900 tracking-tight">0</span>
           <p class="text-xs text-slate-500 mt-1" id="kpi-subtitle-scope">Escopo ativo</p>
         </div>
         <div class="absolute -right-4 -bottom-4 w-16 h-16 bg-blue-500/5 rounded-full pointer-events-none"></div>
@@ -136,13 +137,13 @@
         </div>
         <div class="mt-3 flex items-baseline justify-between">
           <div>
-            <span id="kpi-total-efetivos" class="text-2xl font-extrabold text-slate-900 tracking-tight">1</span>
+            <span id="kpi-total-efetivos" class="text-2xl font-extrabold text-slate-900 tracking-tight">0</span>
             <span class="text-xs text-slate-500 ml-1">vagas</span>
           </div>
-          <span id="kpi-custo-efetivos" class="text-xs sm:text-sm font-semibold text-purple-700">R$&nbsp;10.355,00</span>
+          <span id="kpi-custo-efetivos" class="text-xs sm:text-sm font-semibold text-purple-700">R$ 0,00</span>
         </div>
         <div class="mt-1 w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-          <div id="bar-pct-efetivo" class="bg-purple-600 h-full rounded-full transition-all duration-300" style="width: 100%;"></div>
+          <div id="bar-pct-efetivo" class="bg-purple-600 h-full rounded-full transition-all duration-300" style="width: 50%"></div>
         </div>
       </div>
 
@@ -155,13 +156,13 @@
         </div>
         <div class="mt-3 flex items-baseline justify-between">
           <div>
-            <span id="kpi-total-semvinculo" class="text-2xl font-extrabold text-slate-900 tracking-tight">16</span>
+            <span id="kpi-total-semvinculo" class="text-2xl font-extrabold text-slate-900 tracking-tight">0</span>
             <span class="text-xs text-slate-500 ml-1">vagas</span>
           </div>
-          <span id="kpi-custo-semvinculo" class="text-xs sm:text-sm font-semibold text-amber-700">R$&nbsp;109.356,00</span>
+          <span id="kpi-custo-semvinculo" class="text-xs sm:text-sm font-semibold text-amber-700">R$ 0,00</span>
         </div>
         <div class="mt-1 w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
-          <div id="bar-pct-semvinculo" class="bg-amber-500 h-full rounded-full transition-all duration-300" style="width: 1600%;"></div>
+          <div id="bar-pct-semvinculo" class="bg-amber-500 h-full rounded-full transition-all duration-300" style="width: 50%"></div>
         </div>
       </div>
     </section>
@@ -172,7 +173,7 @@
         <div>
           <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
             <i class="fa-solid fa-sliders text-emerald-600"></i>
-            Regras de Provimento &amp; Ações Rápidas (<span id="active-scope-badge" class="text-emerald-700 font-extrabold">UITR</span>)
+            Regras de Provimento & Ações Rápidas (<span id="active-scope-badge" class="text-emerald-700 font-extrabold">Subsecretaria</span>)
           </h2>
           <p class="text-xs text-slate-500">Alterne percentuais de vínculo ou zere os inputs na aba ativa.</p>
         </div>
@@ -190,7 +191,7 @@
     </div>
 
     <!-- PÁGINA 1: SUBSECRETARIA -->
-    <div id="page-subsecretaria" class="space-y-6 block hidden">
+    <div id="page-subsecretaria" class="space-y-6 block">
       
       <!-- Gabinete Editable Board -->
       <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 border-l-4 border-l-slate-800">
@@ -204,7 +205,7 @@
           </div>
           <div class="text-right">
             <span class="text-xs text-slate-400 block">Subtotal Gabinete:</span>
-            <span id="gabinete-subtotal-val" class="text-sm font-extrabold text-slate-900">R$&nbsp;40.260,00</span>
+            <span id="gabinete-subtotal-val" class="text-sm font-extrabold text-slate-900">R$ 0,00</span>
           </div>
         </div>
 
@@ -219,76 +220,8 @@
               </tr>
             </thead>
             <tbody id="gabinete-editable-tbody" class="divide-y divide-slate-50">
-          <tr class="hover:bg-slate-50 transition">
-            <td class="py-2.5 px-2">
-              <span class="block font-bold text-slate-800">CNE-03 / CPE-03</span>
-              <span class="block text-[10px] text-slate-400">Dir. Geral / Subsecretário</span>
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="0" onchange="updateGabinete('CNE-03', 'efetivo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-purple-700 bg-purple-50/50 border border-purple-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="1" onchange="updateGabinete('CNE-03', 'semVinculo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-amber-700 bg-amber-50/50 border border-amber-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 px-2 text-right font-bold text-slate-700">R$&nbsp;12.944,00</td>
-          </tr>
-        
-          <tr class="hover:bg-slate-50 transition">
-            <td class="py-2.5 px-2">
-              <span class="block font-bold text-slate-800">CNE-05 / CPE-05</span>
-              <span class="block text-[10px] text-slate-400">Chefia Unid. / Coordenação</span>
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="1" onchange="updateGabinete('CNE-05', 'efetivo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-purple-700 bg-purple-50/50 border border-purple-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="0" onchange="updateGabinete('CNE-05', 'semVinculo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-amber-700 bg-amber-50/50 border border-amber-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 px-2 text-right font-bold text-slate-700">R$&nbsp;6.510,00</td>
-          </tr>
-        
-          <tr class="hover:bg-slate-50 transition">
-            <td class="py-2.5 px-2">
-              <span class="block font-bold text-slate-800">CNE-06 / CPE-06</span>
-              <span class="block text-[10px] text-slate-400">Diretoria / Assessor Sup.</span>
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="0" onchange="updateGabinete('CNE-06', 'efetivo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-purple-700 bg-purple-50/50 border border-purple-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="1" onchange="updateGabinete('CNE-06', 'semVinculo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-amber-700 bg-amber-50/50 border border-amber-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 px-2 text-right font-bold text-slate-700">R$&nbsp;7.325,00</td>
-          </tr>
-        
-          <tr class="hover:bg-slate-50 transition">
-            <td class="py-2.5 px-2">
-              <span class="block font-bold text-slate-800">CNE-07</span>
-              <span class="block text-[10px] text-slate-400">Assessoria Técnica</span>
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="1" onchange="updateGabinete('CNE-07', 'efetivo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-purple-700 bg-purple-50/50 border border-purple-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="1" onchange="updateGabinete('CNE-07', 'semVinculo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-amber-700 bg-amber-50/50 border border-amber-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 px-2 text-right font-bold text-slate-700">R$&nbsp;10.541,00</td>
-          </tr>
-        
-          <tr class="hover:bg-slate-50 transition">
-            <td class="py-2.5 px-2">
-              <span class="block font-bold text-slate-800">CC-08 / CPC-08</span>
-              <span class="block text-[10px] text-slate-400">Apoio Técnico</span>
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="1" onchange="updateGabinete('CC-08', 'efetivo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-purple-700 bg-purple-50/50 border border-purple-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 text-center">
-              <input type="number" min="0" max="99" value="0" onchange="updateGabinete('CC-08', 'semVinculo', this.value)" class="w-16 px-1.5 py-1 text-center font-bold text-amber-700 bg-amber-50/50 border border-amber-200 rounded focus:ring focus:outline-none">
-            </td>
-            <td class="py-2.5 px-2 text-right font-bold text-slate-700">R$&nbsp;2.940,00</td>
-          </tr>
-        </tbody>
+              <!-- Rendered via JS -->
+            </tbody>
           </table>
         </div>
       </div>
@@ -304,8 +237,8 @@
           </div>
           <div class="space-y-2 text-xs">
             <div class="flex justify-between py-1"><span class="text-slate-500">Estrutura:</span><span class="font-bold">8 Setores</span></div>
-            <div class="flex justify-between py-1"><span class="text-slate-500">Total Vagas:</span><span id="macro-uitr-vagas" class="font-bold">undefined</span></div>
-            <div class="flex justify-between py-1 pt-2 border-t border-teal-100"><span class="text-teal-900 font-semibold">Custo Mensal:</span><span id="macro-uitr-custo" class="font-extrabold text-teal-700 text-sm">R$&nbsp;119.711,00</span></div>
+            <div class="flex justify-between py-1"><span class="text-slate-500">Total Vagas:</span><span id="macro-uitr-vagas" class="font-bold">0</span></div>
+            <div class="flex justify-between py-1 pt-2 border-t border-teal-100"><span class="text-teal-900 font-semibold">Custo Mensal:</span><span id="macro-uitr-custo" class="font-extrabold text-teal-700 text-sm">R$ 0,00</span></div>
           </div>
         </div>
 
@@ -318,15 +251,15 @@
           </div>
           <div class="space-y-2 text-xs">
             <div class="flex justify-between py-1"><span class="text-slate-500">Estrutura:</span><span class="font-bold">11 Setores</span></div>
-            <div class="flex justify-between py-1"><span class="text-slate-500">Total Vagas:</span><span id="macro-uasf-vagas" class="font-bold">undefined</span></div>
-            <div class="flex justify-between py-1 pt-2 border-t border-amber-100"><span class="text-amber-900 font-semibold">Custo Mensal:</span><span id="macro-uasf-custo" class="font-extrabold text-amber-700 text-sm">R$&nbsp;153.127,00</span></div>
+            <div class="flex justify-between py-1"><span class="text-slate-500">Total Vagas:</span><span id="macro-uasf-vagas" class="font-bold">0</span></div>
+            <div class="flex justify-between py-1 pt-2 border-t border-amber-100"><span class="text-amber-900 font-semibold">Custo Mensal:</span><span id="macro-uasf-custo" class="font-extrabold text-amber-700 text-sm">R$ 0,00</span></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- PÁGINA 2: UITR -->
-    <div id="page-uitr" class="space-y-5">
+    <div id="page-uitr" class="hidden space-y-5">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-teal-50/60 p-4 rounded-2xl border border-teal-100">
         <div>
           <h3 class="text-base font-bold text-teal-950 flex items-center gap-2">
@@ -335,335 +268,11 @@
           <p class="text-xs text-teal-800">1 Unidade Central, 2 Coordenações, 5 Diretorias (Geoinformação, Mapeamento).</p>
         </div>
       </div>
-      <div id="uitr-sectors-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5"><div class="bg-white rounded-xl border border-teal-300 bg-teal-50 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-building-user text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Unidade Central</span>
-              <span class="text-sm font-bold text-slate-800">Unidade de Inteligência Territorial</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-03 / CPE-03</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 0, 'CNE-03', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CNE-03', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;10.355,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-05 / CPE-05</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CNE-05', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 0, 'CNE-05', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;8.138,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 0, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;18.493,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-code-branch text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Coordenação</span>
-              <span class="text-sm font-bold text-slate-800">Coordenação 1: Geoinformação</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-05 / CPE-05</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 1, 'CNE-05', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 1, 'CNE-05', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;8.138,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 1, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 1, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 1, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 1, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 1, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 1, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">3 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;21.319,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-code-branch text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Coordenação</span>
-              <span class="text-sm font-bold text-slate-800">Coordenação 2: Mapeamento</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-05 / CPE-05</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 2, 'CNE-05', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 2, 'CNE-05', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;8.138,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 2, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 2, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 2, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 2, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 2, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 2, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.994,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-database text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">c1d1 - BD Geoespaciais</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 3, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 3, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 3, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 3, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 3, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 3, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-microchip text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">c1d2 - Geotecnologias</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 4, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 4, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 4, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 4, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 4, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 4, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-chart-area text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">c1d3 - Inteligência Geográfica</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 5, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 5, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 5, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 5, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 5, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 5, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-satellite text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">c2d1 - Monitoramento</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 6, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 6, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 6, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 6, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 6, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 6, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-location-dot text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">c2d2 - Endereçamento Rural</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 7, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 7, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 7, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uitr', 7, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 7, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uitr', 7, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div></div>
+      <div id="uitr-sectors-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>
     </div>
 
     <!-- PÁGINA 3: UASF -->
-    <div id="page-uasf" class="space-y-5 hidden">
+    <div id="page-uasf" class="hidden space-y-5">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-amber-50/60 p-4 rounded-2xl border border-amber-100">
         <div>
           <h3 class="text-base font-bold text-amber-950 flex items-center gap-2">
@@ -672,442 +281,7 @@
           <p class="text-xs text-amber-800">1 Chefia, 2 Coordenações, 8 Diretorias (Gestão Processual, Fiscalização).</p>
         </div>
       </div>
-      <div id="uasf-sectors-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5"><div class="bg-white rounded-xl border border-amber-300 bg-amber-50 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-scale-balanced text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Unidade Central</span>
-              <span class="text-sm font-bold text-slate-800">Chefia da Unid. Assuntos Fundiários</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-03 / CPE-03</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CNE-03', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CNE-03', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-05 / CPE-05</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 0, 'CNE-05', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CNE-05', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;6.510,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 0, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 0, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 0, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">3 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;19.691,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-file-signature text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Coordenação</span>
-              <span class="text-sm font-bold text-slate-800">Coordenação de Regularização</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-05 / CPE-05</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 1, 'CNE-05', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 1, 'CNE-05', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;8.138,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 1, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 1, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 1, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 1, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 1, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 1, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.994,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-shield-halved text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Coordenação</span>
-              <span class="text-sm font-bold text-slate-800">Coordenação de Fiscalização</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-05 / CPE-05</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 2, 'CNE-05', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 2, 'CNE-05', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;8.138,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 2, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 2, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 2, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 2, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 2, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 2, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.994,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-folder-open text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Admissibilidade</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 3, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 3, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 3, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 3, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 3, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 3, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-handshake text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Gestão Contratual</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 4, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 4, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 4, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 4, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 4, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 4, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-coins text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Arrecadação</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 5, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 5, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 5, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 5, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 5, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 5, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-file-lines text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Planos Utilização</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 6, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 6, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 6, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 6, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 6, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 6, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-car-side text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Fiscalização Presencial</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 7, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 7, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 7, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 7, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 7, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 7, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-clipboard-check text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Vistorias</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 8, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 8, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 8, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 8, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 8, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 8, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-triangle-exclamation text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Repressão Parcelamento</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 9, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 9, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 9, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 9, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 9, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 9, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div><div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col">
-          <div class="flex items-center gap-2 border-b border-slate-100 pb-2 mb-2">
-            <i class="fa-solid fa-gavel text-slate-500"></i>
-            <div>
-              <span class="text-[10px] uppercase font-bold text-slate-400 block">Diretoria</span>
-              <span class="text-sm font-bold text-slate-800">Dir. Contencioso Sancionatório</span>
-            </div>
-          </div>
-          <table class="w-full text-left mb-2">
-            <thead><tr class="text-[10px] text-slate-400 uppercase"><th class="font-normal">Cargo</th><th class="text-center font-normal">Ef.</th><th class="text-center font-normal">S/V.</th><th class="text-right font-normal">Total</th></tr></thead>
-            <tbody>
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-06 / CPE-06</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 10, 'CNE-06', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 10, 'CNE-06', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;7.325,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CNE-07</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 10, 'CNE-07', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="1" onchange="updateSector('uasf', 10, 'CNE-07', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;5.856,00</td>
-            </tr>
-          
-            <tr class="border-b border-slate-100">
-              <td class="py-1 text-[11px] font-medium text-slate-800">CC-08 / CPC-08</td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 10, 'CC-08', 'efetivo', this.value)" class="w-12 text-center text-xs border rounded text-purple-700 bg-purple-50"></td>
-              <td class="py-1 text-center"><input type="number" min="0" value="0" onchange="updateSector('uasf', 10, 'CC-08', 'semVinculo', this.value)" class="w-12 text-center text-xs border rounded text-amber-700 bg-amber-50"></td>
-              <td class="py-1 text-right text-[11px] font-semibold">R$&nbsp;0,00</td>
-            </tr>
-          </tbody>
-          </table>
-          <div class="mt-auto pt-2 border-t border-slate-100 flex justify-between items-center text-xs">
-            <span class="font-bold text-slate-600">2 vagas</span>
-            <span class="font-extrabold text-slate-900">R$&nbsp;13.181,00</span>
-          </div>
-        </div></div>
+      <div id="uasf-sectors-container" class="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>
     </div>
 
     <!-- Tabela Consolidada -->
@@ -1127,88 +301,8 @@
               <th class="px-4 py-3 text-right">Total Mensal (R$)</th>
             </tr>
           </thead>
-          <tbody id="consolidated-table-body" class="divide-y divide-slate-100">
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">Unidade de Inteligência Territorial</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Unidade Central</td>
-          <td class="px-3 py-2 text-center text-purple-700">1</td>
-          <td class="px-3 py-2 text-center text-amber-700">1</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;18.493,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">Coordenação 1: Geoinformação</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Coordenação</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">3</td>
-          <td class="px-3 py-2 text-center font-bold">3</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;21.319,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">Coordenação 2: Mapeamento</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Coordenação</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">2</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;13.994,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">c1d1 - BD Geoespaciais</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Diretoria</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">2</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;13.181,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">c1d2 - Geotecnologias</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Diretoria</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">2</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;13.181,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">c1d3 - Inteligência Geográfica</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Diretoria</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">2</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;13.181,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">c2d1 - Monitoramento</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Diretoria</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">2</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;13.181,00</td>
-        </tr>
-      
-        <tr class="border-b border-slate-100 hover:bg-slate-50">
-          <td class="px-4 py-2 font-medium text-slate-800">c2d2 - Endereçamento Rural</td>
-          <td class="px-3 py-2 text-center text-[10px] font-bold text-slate-500 uppercase">Diretoria</td>
-          <td class="px-3 py-2 text-center text-purple-700">0</td>
-          <td class="px-3 py-2 text-center text-amber-700">2</td>
-          <td class="px-3 py-2 text-center font-bold">2</td>
-          <td class="px-4 py-2 text-right font-bold text-slate-800">R$&nbsp;13.181,00</td>
-        </tr>
-      </tbody>
-          <tfoot class="bg-slate-900 text-white font-bold" id="consolidated-table-foot">
-        <tr>
-          <td class="px-4 py-3" colspan="2">TOTAL ESCOPO ATIVO</td>
-          <td class="px-3 py-3 text-center">1</td>
-          <td class="px-3 py-3 text-center">16</td>
-          <td class="px-3 py-3 text-center text-emerald-300 font-extrabold">17</td>
-          <td class="px-4 py-3 text-right text-emerald-400 font-extrabold">R$&nbsp;119.711,00</td>
-        </tr>
-      </tfoot>
+          <tbody id="consolidated-table-body" class="divide-y divide-slate-100"></tbody>
+          <tfoot class="bg-slate-900 text-white font-bold" id="consolidated-table-foot"></tfoot>
         </table>
       </div>
     </div>
@@ -1227,188 +321,13 @@
           </div>
         </div>
         <div class="overflow-x-auto pb-4 pt-2">
-          <div id="organogram-tree-container" class="min-w-[760px] flex flex-col items-center"><div class="flex flex-col items-center">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-800 ring-2 ring-slate-800/20">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Gabinete Subsecretaria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Gabinete do Subsecretário</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">6 vagas | R$&nbsp;40.260,00</div>
-        </div>
-      <div class="w-0.5 h-6 bg-slate-300"></div><div class="w-[600px] border-t-2 border-slate-300"></div><div class="flex justify-between w-[700px] pt-4"><div class="flex flex-col items-center w-1/2">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-teal-500">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Unidade Central</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Unidade de Inteligência Territorial</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;18.493,00</div>
-        </div>
-      <div class="w-0.5 h-4 bg-slate-300"></div><div class="w-full border-t-2 border-slate-300"></div><div class="flex w-full justify-around pt-4"><div class="flex flex-col items-center">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-teal-300">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Coordenação</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Coordenação 1: Geoinformação</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">3 vagas | R$&nbsp;21.319,00</div>
-        </div>
-      <div class="w-0.5 h-4 bg-slate-300"></div><div class="space-y-2">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">c1d1 - BD Geoespaciais</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">c1d2 - Geotecnologias</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">c1d3 - Inteligência Geográfica</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      </div></div><div class="flex flex-col items-center">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-teal-300">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Coordenação</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Coordenação 2: Mapeamento</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.994,00</div>
-        </div>
-      <div class="w-0.5 h-4 bg-slate-300"></div><div class="space-y-2">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">c2d1 - Monitoramento</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">c2d2 - Endereçamento Rural</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      </div></div></div></div><div class="flex flex-col items-center w-1/2">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-amber-500">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Unidade Central</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Chefia da Unid. Assuntos Fundiários</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">3 vagas | R$&nbsp;19.691,00</div>
-        </div>
-      <div class="w-0.5 h-4 bg-slate-300"></div><div class="w-full border-t-2 border-slate-300"></div><div class="flex w-full justify-around pt-4"><div class="flex flex-col items-center">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-amber-300">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Coordenação</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Coordenação de Regularização</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.994,00</div>
-        </div>
-      <div class="w-0.5 h-4 bg-slate-300"></div><div class="space-y-2">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Admissibilidade</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Gestão Contratual</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Arrecadação</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Planos Utilização</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      </div></div><div class="flex flex-col items-center">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-amber-300">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Coordenação</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Coordenação de Fiscalização</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.994,00</div>
-        </div>
-      <div class="w-0.5 h-4 bg-slate-300"></div><div class="space-y-2">
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Fiscalização Presencial</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Vistorias</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Repressão Parcelamento</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      
-        <div class="bg-white border border-slate-300 rounded shadow-sm w-48 p-2 text-center z-10 relative border-slate-200">
-          <div class="text-[9px] uppercase font-bold text-slate-500 mb-1">Diretoria</div>
-          <div class="text-xs font-bold text-slate-800 leading-tight mb-2 h-8 flex items-center justify-center">Dir. Contencioso Sancionatório</div>
-          <div class="text-[10px] font-bold bg-slate-100 rounded px-1 py-0.5">2 vagas | R$&nbsp;13.181,00</div>
-        </div>
-      </div></div></div></div></div></div></div>
+          <div id="organogram-tree-container" class="min-w-[760px] flex flex-col items-center"></div>
         </div>
       </div>
       <!-- Cargo Breakdown -->
       <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col">
         <h4 class="text-sm font-bold text-slate-900 mb-4 border-b border-slate-100 pb-3">Consolidado por Nível de Cargo</h4>
-        <div id="cargo-breakdown-list" class="space-y-2.5 overflow-y-auto max-h-[460px] text-xs">
-        <div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between">
-          <div>
-            <span class="font-bold text-slate-800 block">CNE-03 / CPE-03</span>
-            <span class="text-[11px] text-slate-500">Ef: <strong class="text-purple-700">1</strong> | SV: <strong class="text-amber-700">0</strong></span>
-          </div>
-          <div class="text-right">
-            <span class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-white border">1 vagas</span>
-            <span class="block text-[11px] font-semibold mt-1">R$&nbsp;10.355,00</span>
-          </div>
-        </div>
-      
-        <div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between">
-          <div>
-            <span class="font-bold text-slate-800 block">CNE-05 / CPE-05</span>
-            <span class="text-[11px] text-slate-500">Ef: <strong class="text-purple-700">0</strong> | SV: <strong class="text-amber-700">3</strong></span>
-          </div>
-          <div class="text-right">
-            <span class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-white border">3 vagas</span>
-            <span class="block text-[11px] font-semibold mt-1">R$&nbsp;24.414,00</span>
-          </div>
-        </div>
-      
-        <div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between">
-          <div>
-            <span class="font-bold text-slate-800 block">CNE-06 / CPE-06</span>
-            <span class="text-[11px] text-slate-500">Ef: <strong class="text-purple-700">0</strong> | SV: <strong class="text-amber-700">6</strong></span>
-          </div>
-          <div class="text-right">
-            <span class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-white border">6 vagas</span>
-            <span class="block text-[11px] font-semibold mt-1">R$&nbsp;43.950,00</span>
-          </div>
-        </div>
-      
-        <div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between">
-          <div>
-            <span class="font-bold text-slate-800 block">CNE-07</span>
-            <span class="text-[11px] text-slate-500">Ef: <strong class="text-purple-700">0</strong> | SV: <strong class="text-amber-700">7</strong></span>
-          </div>
-          <div class="text-right">
-            <span class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-white border">7 vagas</span>
-            <span class="block text-[11px] font-semibold mt-1">R$&nbsp;40.992,00</span>
-          </div>
-        </div>
-      
-        <div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between">
-          <div>
-            <span class="font-bold text-slate-800 block">CC-08 / CPC-08</span>
-            <span class="text-[11px] text-slate-500">Ef: <strong class="text-purple-700">0</strong> | SV: <strong class="text-amber-700">0</strong></span>
-          </div>
-          <div class="text-right">
-            <span class="inline-block px-2 py-0.5 rounded text-xs font-bold bg-white border">0 vagas</span>
-            <span class="block text-[11px] font-semibold mt-1">R$&nbsp;0,00</span>
-          </div>
-        </div>
-      </div>
+        <div id="cargo-breakdown-list" class="space-y-2.5 overflow-y-auto max-h-[460px] text-xs"></div>
       </div>
     </section>
 
@@ -1417,35 +336,7 @@
       <h3 class="text-sm font-bold text-slate-900 mb-2">Tabela de Remunerações (Oficial)</h3>
       <p class="text-[11px] text-slate-500 mb-4">Nota: O cargo CNE-04 / CPE-04 foi integralmente suprimido das opções de preenchimento.</p>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-xs" id="reference-table-container">
-        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="font-bold text-slate-800 block mb-1">CNE-03 / CPE-03</span>
-          <div class="text-slate-600 flex justify-between"><span>Efetivo:</span> <span class="font-semibold text-purple-800">R$&nbsp;10.355,00</span></div>
-          <div class="text-slate-600 flex justify-between"><span>S/ Vínc:</span> <span class="font-semibold text-amber-800">R$&nbsp;12.944,00</span></div>
-        </div>
-      
-        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="font-bold text-slate-800 block mb-1">CNE-05 / CPE-05</span>
-          <div class="text-slate-600 flex justify-between"><span>Efetivo:</span> <span class="font-semibold text-purple-800">R$&nbsp;6.510,00</span></div>
-          <div class="text-slate-600 flex justify-between"><span>S/ Vínc:</span> <span class="font-semibold text-amber-800">R$&nbsp;8.138,00</span></div>
-        </div>
-      
-        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="font-bold text-slate-800 block mb-1">CNE-06 / CPE-06</span>
-          <div class="text-slate-600 flex justify-between"><span>Efetivo:</span> <span class="font-semibold text-purple-800">R$&nbsp;5.860,00</span></div>
-          <div class="text-slate-600 flex justify-between"><span>S/ Vínc:</span> <span class="font-semibold text-amber-800">R$&nbsp;7.325,00</span></div>
-        </div>
-      
-        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="font-bold text-slate-800 block mb-1">CNE-07</span>
-          <div class="text-slate-600 flex justify-between"><span>Efetivo:</span> <span class="font-semibold text-purple-800">R$&nbsp;4.685,00</span></div>
-          <div class="text-slate-600 flex justify-between"><span>S/ Vínc:</span> <span class="font-semibold text-amber-800">R$&nbsp;5.856,00</span></div>
-        </div>
-      
-        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
-          <span class="font-bold text-slate-800 block mb-1">CC-08 / CPC-08</span>
-          <div class="text-slate-600 flex justify-between"><span>Efetivo:</span> <span class="font-semibold text-purple-800">R$&nbsp;2.940,00</span></div>
-          <div class="text-slate-600 flex justify-between"><span>S/ Vínc:</span> <span class="font-semibold text-amber-800">R$&nbsp;3.675,00</span></div>
-        </div>
+        <!-- Rendered via JS to maintain single source of truth -->
       </div>
     </section>
 
@@ -1868,5 +759,5 @@
       updateAll();
     };
   </script>
-
-</body></html>
+</body>
+</html>
